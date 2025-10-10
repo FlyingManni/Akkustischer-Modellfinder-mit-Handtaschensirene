@@ -42,7 +42,7 @@ Hierbei gibt es vier mögliche Zustände:
 |-------------|---------------------------------|
 | **RC-Signal** | An einen Empfängerausgang (Signal) anschließen |
 | **RC-GND**    | Masse des Empfängerausgangs |
-| **+UB**       | Betriebsspannung des Alarmgebers **max. 5V'' (nicht direkt an Batterie-Plus anschließen, sondern an die Buchse, über die der Alarm ursprünglich ausgelöst wird – sonst ist die Steuerung ständig aktiv und die Batterie bald leer) |
+| **+UB**       | Betriebsspannung des Alarmgebers **max. 5V** (nicht direkt an Batterie-Plus anschließen, sondern an die Buchse, über die der Alarm ursprünglich ausgelöst wird – sonst ist die Steuerung ständig aktiv und die Batterie bald leer) |
 | **Alarm**     | Schaltet gegen Masse – hier wird die vorhandene Alarmschaltung angeschlossen |
 | **GND**       | Direkt an den Minuspol der Batterie anschließen |
 
