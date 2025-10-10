@@ -1,15 +1,15 @@
-/* RC-Steuerung für Taschenalarm
+/* RC-Steuerung für Taschenalarm von Manfred Stratmann
  *  atTiny 45 mit 8 Mhz internal Clock 
  *
  * Es muss mindestens einmal ein Signal unter 1,4ms vom Empfänger gekommen sein
  * damit sich die Steuerung "scharf" schaltet, ohne vorheriges Signal wird kein
  * Alarm ausgelöst.
- * Am Empfänger sollte ein Failsave von 1,5ms aktiviert sein. Im Bereichzwischen
- * 1,4 und 1,7ms startet ein 1 Minütiger Tamer nach dessen Ablauf Alarm ausgelöst
+ * Am Empfänger sollte ein Failsave von 1,5ms aktiviert sein. Im Bereich zwischen
+ * 1,4 und 1,7ms startet ein 1 Minütiger Timer nach dessen Ablauf Alarm ausgelöst
  * wird.
  * Bei Signal über 1,7ms wird sofort Alarm ausgelöst. Auch wenn vom Empfänger gar 
- * kein Signal mehr kommt wird sofort Alarm ausgelöst (sofern der einmal "scharf"
- * geschalztet wurde).
+ * kein Signal mehr kommt wird nach 1 Minute Alarm ausgelöst (sofern der einmal "scharf"
+ * geschaltet wurde).
  * 
  * Anzeigen der Status-Led:
  * aus : Alarmgeber ist nicht "scharf", es wird überhaupt kein Alarm ausgelöst
@@ -94,7 +94,7 @@ void loop() {
 
   if ((AlarmScharf == true) && CheckAlarm) {
     if (((res > 2500) || (inRange(res, 1400, 1700) == true)) && (((millis() - countDownStart) / 1000) > CountDownTimer)) { DoAlarm = true; }  // kein Signal mehr
-    if (inRange(res, 1701, 2100) == true) { // Signal am Sender aufgelöst
+    if (inRange(res, 1701, 2100) == true) { // Signal am Sender ausgelöst
        DoAlarm = true; 
        ResetContdown();
     }  
