@@ -50,13 +50,14 @@ Hierbei gibt es vier mögliche Zustände:
 
 ## 📦 Tiny45 Steuerung
 
-![Beispiel-Alarmgeber] beispiel_alarmgeber.jpg
+![Beispiel-Alarmgeber] (https://github.com/FlyingManni/Akkustischer-Modellfinder-mit-Handtaschensirene/blob/main/beispiel_alarmgeber.jpg)
 
 ---
 
 ## 🎬 Demo-Video
 
-[▶️ Video ansehen](Test.MP4)
+<video src="https://github.com/FlyingManni/Akkustischer-Modellfinder-mit-Handtaschensirene/blob/main/Test.mp4" controls width="600"></video>
+
 
 ---
 
