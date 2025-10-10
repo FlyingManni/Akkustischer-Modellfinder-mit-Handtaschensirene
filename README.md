@@ -54,13 +54,6 @@ Hierbei gibt es vier mögliche Zustände:
 
 ---
 
-## 🎬 Demo-Video
-
-[🎥 Demo-Video ansehen](https://github.com/FlyingManni/Akkustischer-Modellfinder-mit-Handtaschensirene/raw/main/Test.mp4)
-
-
----
-
 ## 📘 Lizenz & Hinweise
 
 Dieses Projekt ist für den privaten Gebrauch gedacht.  
