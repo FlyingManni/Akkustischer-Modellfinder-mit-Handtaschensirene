@@ -6,7 +6,7 @@ Ansteuerung — hier kommt der **Tiny45 Modellfinder** zum Einsatz.
 
 ---
 
-## 🧭 Tiny45 Steuerung 1
+## 🧭 Tiny45 Steuerung
 
 Der Modellfinder wird über einen freien Empfängerkanal gesteuert.  
 Hierbei gibt es vier mögliche Zustände:
